@@ -63,3 +63,33 @@ button:active {
 .operator-btn:active {
   background-color: hsl(31, 97%, 69%);
 }
+
+/* Media Query for mobile screens */
+@media (max-width: 600px) {
+  button {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  #keys {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 15px;
+  }
+
+  #calculator {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .display {
+    padding: 10px 0;
+    font-size: 3rem;
+  }
+
+  body {
+    height: 100%;
+    padding: 10px;
+  }
+}
